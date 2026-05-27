@@ -5,7 +5,7 @@
 // ═══════════════════════════════════════════════════════════════════════════════
 
 pipeline {
-    agent { label 'wsl-agent' }
+    agent { label 'kyra' }
 
     // ── Environment Variables ──────────────────────────────────────────────────
     environment {
