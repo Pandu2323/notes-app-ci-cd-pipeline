@@ -51,6 +51,8 @@ A **Notes Web Application** where you can:
 - Jenkins automatically runs tests, builds Docker images, and deploys
 - Your live app updates automatically — you don't touch the server
 
+![alt text](<images/3.png>)
+
 ---
 
 ## Architecture Overview
@@ -385,11 +387,14 @@ Open a **new Command Prompt** (keep this running always during development):
 ```cmd
 ngrok http 8080
 ```
+![alt text](<images/4.png>)
 
 You'll see output like:
 ```
 Forwarding   https://abc123def456.ngrok-free.app -> http://localhost:8080
 ```
+
+![alt text](<images/6.png>)
 
 📝 **Copy the HTTPS URL** — you'll need it in the next step.
 
@@ -414,6 +419,8 @@ Now tell GitHub to notify Jenkins on every push.
 
 GitHub sends a test ping. You should see a **green checkmark ✅** next to the webhook.
 
+![alt text](<images/5.png>)
+
 #### Verify It Works
 
 ```bash
@@ -423,6 +430,10 @@ git add README.md
 git commit -m "test: trigger first automated pipeline"
 git push origin main
 ```
+
+![alt text](<images/7.png>)
+
+![alt text](<images/1.png>)
 
 Go to **http://localhost:8080** → watch your `notes-app-cicd` job start automatically!
 
@@ -436,7 +447,7 @@ Go to **http://localhost:8080** → watch your `notes-app-cicd` job start automa
 7. 🧹 Clean up old Docker resources
 
 After it completes (3–5 min), open **http://localhost:3000** — your updated app is live! 🎉
-
+![alt text](<images/2.png>)
 ---
 
 ## Part B — Everyday Usage
