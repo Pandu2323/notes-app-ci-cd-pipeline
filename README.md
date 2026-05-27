@@ -447,7 +447,9 @@ Go to **http://localhost:8080** → watch your `notes-app-cicd` job start automa
 7. 🧹 Clean up old Docker resources
 
 After it completes (3–5 min), open **http://localhost:3000** — your updated app is live! 🎉
+
 ![alt text](<images/2.png>)
+
 ---
 
 ## Part B — Everyday Usage
